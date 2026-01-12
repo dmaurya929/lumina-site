@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Gadgets - Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Lumina Gadgets</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Newsletter</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="inquiry.html">Inquiry</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>We Value Your Feedback</h1>
+                    <p>Help us improve our products and services.</p>
+                </div>
+                
+                <form id="feedback-form" novalidate>
+                    <!-- Field 1: Name -->
+                    <div class="form-group">
+                        <label for="name">Your Name (Optional)</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <!-- Field 2: Experience Rating -->
+                    <div class="form-group">
+                        <label for="rating">Overall Experience</label>
+                        <select id="rating" name="rating">
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+
+                    <!-- Field 3: Type -->
+                    <div class="form-group">
+                        <label>Feedback Type</label>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="type" value="suggestion" checked> Suggestion
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="type" value="complaint"> Complaint
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="type" value="compliment"> Compliment
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Field 4: Features -->
+                    <div class="form-group">
+                        <label>Features Used</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="features" value="search"> Search
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="features" value="checkout"> Checkout
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="features" value="support"> Support Chat
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Field 5: Description -->
+                    <div class="form-group">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" placeholder="Tell us more..."></textarea>
+                    </div>
+
+                    <!-- Field 6: Contact Permission -->
+                    <div class="form-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="contact_permission" id="contact_permission">
+                            You may contact me about this feedback
+                        </label>
+                    </div>
+                    
+                    <!-- Field 7: Email (Visible only if contact permission is checked - simple JS or just show it) -->
+                    <!-- For accessibility demo, keeping it simple: just show it -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+
+            <section style="margin-top: 4rem;">
+                <h2 class="section-title">Community Feedback</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The Lumina X1 headset is a game changer for my daily commute. The noise cancellation is top-notch!"
+                        </div>
+                        <div class="testimonial-author">Sarah Jenkins</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Great customer service. I had an issue with shipping and they resolved it within hours. Highly recommended."
+                        </div>
+                        <div class="testimonial-author">Michael Chen</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The build quality of the Pro Monitor is excellent. Perfect for my design work."
+                        </div>
+                        <div class="testimonial-author">David Miller</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Lumina Gadgets. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

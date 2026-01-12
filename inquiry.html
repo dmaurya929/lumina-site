@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Gadgets - Product Inquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Lumina Gadgets</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Newsletter</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="inquiry.html">Inquiry</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section style="text-align: center; margin-bottom: 3rem;">
+                <h1>Corporate & Bulk Orders</h1>
+                <p style="max-width: 700px; margin: 0 auto 2rem;">
+                    Equip your team with the best tools. We offer exclusive volume discounts, dedicated support, and custom solutions for businesses of all sizes.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏢</div>
+                        <h3>Enterprise Ready</h3>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🚚</div>
+                        <h3>Global Shipping</h3>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚙️</div>
+                        <h3>Custom Configs</h3>
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Request a Quote</h2>
+                    <p>Interested in bulk orders or custom solutions?</p>
+                </div>
+                
+                <form id="inquiry-form" novalidate>
+
+                    <!-- Field 1: Name -->
+                    <div class="form-group">
+                        <label for="name">Contact Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <!-- Field 2: Company -->
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <!-- Field 3: Email -->
+                    <div class="form-group">
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <!-- Field 4: Product Model -->
+                    <div class="form-group">
+                        <label for="product">Product Model</label>
+                        <select id="product" name="product">
+                            <option value="">Select a product</option>
+                            <option value="lg-x1">Lumina X1 Headset</option>
+                            <option value="lg-pro">Lumina Pro Monitor</option>
+                            <option value="lg-dock">Smart Dock 3000</option>
+                        </select>
+                    </div>
+
+                    <!-- Field 5: Quantity -->
+                    <div class="form-group">
+                        <label for="quantity">Estimated Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1">
+                    </div>
+
+                    <!-- Field 6: Date -->
+                    <div class="form-group">
+                        <label for="date">Required By</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <!-- Field 7: Notes -->
+                    <div class="form-group">
+                        <label for="notes">Additional Requirements</label>
+                        <textarea id="notes" name="notes"></textarea>
+                    </div>
+
+                    <button type="submit">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Lumina Gadgets. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

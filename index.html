@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Gadgets - Subscribe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Lumina Gadgets</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Newsletter</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="inquiry.html">Inquiry</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Future Tech is Here</h1>
+                <p>Discover the latest gadgets that are transforming the way we live and work.</p>
+            </section>
+
+            <!-- Product Showcase -->
+            <section class="product-showcase">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">🎧</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Lumina X1 Headset</h3>
+                            <p class="product-price">$299.99</p>
+                            <p class="product-desc">Immersive noise-cancelling audio with 40-hour battery life.</p>
+                            <a href="checkout.html" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">🖥️</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Lumina Pro Monitor</h3>
+                            <p class="product-price">$599.99</p>
+                            <p class="product-desc">4K Ultra HD display with color accuracy for professionals.</p>
+                            <a href="checkout.html" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">⚡</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smart Dock 3000</h3>
+                            <p class="product-price">$149.99</p>
+                            <p class="product-desc">Universal docking station with 12 ports and 100W charging.</p>
+                            <a href="checkout.html" class="btn-secondary">Buy Now</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Subscription Form -->
+            <section class="form-container">
+                <div class="form-header">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest tech trends and exclusive offers.</p>
+                </div>
+                
+                <form id="newsletter-form" novalidate>
+
+                    <!-- Field 1: Full Name -->
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <label for="fullName">Full Name <span style="color: #e74c3c;">*</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. John Doe">
+                        </div>
+                        <div class="validation-wrapper">
+                            <div class="validation-content" style="display: none; margin-top: 0.5rem;">
+                                <span class="error-icon">⚠️</span>
+                                <span class="error-msg" style="color: #e74c3c; font-size: 0.9rem;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field 2: Email -->
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <label for="email">Email Address <span style="color: #e74c3c;">*</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="email" id="email" name="email" placeholder="john@example.com">
+                        </div>
+                        <div class="validation-wrapper">
+                            <div class="validation-content" style="display: none; margin-top: 0.5rem;">
+                                <span class="error-icon">⚠️</span>
+                                <span class="error-msg" style="color: #e74c3c; font-size: 0.9rem;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field 3: Frequency -->
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <label for="frequency">Frequency <span style="color: #e74c3c;">*</span></label>
+                        </div>
+                        <div class="input-wrapper">
+                            <select id="frequency" name="frequency">
+                                <option value="" disabled selected>Select frequency</option>
+                                <option value="daily">Daily Digest</option>
+                                <option value="weekly">Weekly Summary</option>
+                                <option value="monthly">Monthly Round-up</option>
+                            </select>
+                        </div>
+                        <div class="validation-wrapper">
+                            <div class="validation-content" style="display: none; margin-top: 0.5rem;">
+                                <span class="error-icon">⚠️</span>
+                                <span class="error-msg" style="color: #e74c3c; font-size: 0.9rem;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field 4: Interests (Checkboxes) -->
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <label>Interests <span style="color: #e74c3c;">*</span></label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="technology"> Technology
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="design"> Design
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="interests" value="business"> Business
+                            </label>
+                        </div>
+                        <div class="validation-wrapper">
+                            <div class="validation-content" style="display: none; margin-top: 0.5rem;">
+                                <span class="error-icon">⚠️</span>
+                                <span class="error-msg" style="color: #e74c3c; font-size: 0.9rem;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Field 5: Format (Radios) -->
+                    <div class="form-group">
+                        <div class="label-wrapper">
+                            <label>Preferred Format</label>
+                        </div>
+                        <div class="radio-group">
+                            <label class="radio-item">
+                                <input type="radio" name="format" value="html" checked> HTML
+                            </label>
+                            <label class="radio-item">
+                                <input type="radio" name="format" value="text"> Plain Text
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Field 6: Terms -->
+                    <div class="form-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms" style="display: inline; margin-left: 0.5rem;">I agree to the Terms and Privacy Policy <span style="color: #e74c3c;">*</span></label>
+                        </div>
+                        <div class="validation-wrapper">
+                            <div class="validation-content" style="display: none; margin-top: 0.5rem;">
+                                <span class="error-icon">⚠️</span>
+                                <span class="error-msg" style="color: #e74c3c; font-size: 0.9rem;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Lumina Gadgets. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/newsletter.js"></script>
+</body>
+</html>
+
