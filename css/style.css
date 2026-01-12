@@ -113,6 +113,21 @@ main {
 
 .form-group {
     margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-icon-wrapper {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e74c3c;
+    display: none;
+    pointer-events: none;
 }
 
 label {
@@ -191,6 +206,31 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
     transform: translateY(1px);
+}
+
+.radio-group-error {
+    border: 1px solid #e74c3c;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 3px;
+}
+
+.input-error {
+    border-color: #e74c3c !important;
+}
+
+/* Error Message Styles for Accessibility */
+.error-msg {
+    color: #e74c3c;
+    display: block;
+}
+
+.error-msg:not(:empty) {
+    margin-top: 5px;
 }
 
 /* Footer */
@@ -442,4 +482,3 @@ footer {
         margin: 0 1rem;
     }
 }
-

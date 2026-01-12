@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Basic form submission handler (prevent default for demo)
-    const forms = document.querySelectorAll('form');
+    const forms = document.querySelectorAll('form:not(#inquiry-form):not(#checkout-form):not(#feedback-form)');
     forms.forEach(form => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();

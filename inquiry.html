@@ -55,43 +55,61 @@
 
                     <!-- Field 1: Name -->
                     <div class="form-group">
-                        <label for="name">Contact Name</label>
-                        <input type="text" id="name" name="name">
+                        <label for="name">Contact Name *</label>
+                        <div class="input-icon-wrapper">
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-icon">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 2: Company -->
                     <div class="form-group">
                         <label for="company">Company Name</label>
-                        <input type="text" id="company" name="company">
+                        <div class="input-icon-wrapper">
+                            <input type="text" id="company" name="company">
+                            <span class="error-icon">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 3: Email -->
                     <div class="form-group">
-                        <label for="email">Business Email</label>
-                        <input type="email" id="email" name="email">
+                        <label for="email">Business Email *</label>
+                        <div class="input-icon-wrapper">
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-icon">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 4: Product Model -->
                     <div class="form-group">
-                        <label for="product">Product Model</label>
-                        <select id="product" name="product">
-                            <option value="">Select a product</option>
-                            <option value="lg-x1">Lumina X1 Headset</option>
-                            <option value="lg-pro">Lumina Pro Monitor</option>
-                            <option value="lg-dock">Smart Dock 3000</option>
-                        </select>
+                        <label for="product">Product Model *</label>
+                        <div class="input-icon-wrapper">
+                            <select id="product" name="product" required>
+                                <option value="">Select a product</option>
+                                <option value="lg-x1">Lumina X1 Headset</option>
+                                <option value="lg-pro">Lumina Pro Monitor</option>
+                                <option value="lg-dock">Smart Dock 3000</option>
+                            </select>
+                            <span class="error-icon" style="right: 30px;">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 5: Quantity -->
                     <div class="form-group">
                         <label for="quantity">Estimated Quantity</label>
-                        <input type="number" id="quantity" name="quantity" min="1">
+                        <div class="input-icon-wrapper">
+                            <input type="number" id="quantity" name="quantity" min="1">
+                            <span class="error-icon">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 6: Date -->
                     <div class="form-group">
-                        <label for="date">Required By</label>
-                        <input type="date" id="date" name="date">
+                        <label for="date">Required By *</label>
+                        <div class="input-icon-wrapper">
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-icon" style="right: 30px;">⚠️</span>
+                        </div>
                     </div>
 
                     <!-- Field 7: Notes -->
@@ -119,6 +137,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/inquiry.js"></script>
 </body>
 </html>
 
